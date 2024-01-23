@@ -44,7 +44,7 @@ public class SpecialBeanInstantiationDemo {
         // 通过 ApplicationContext 获取 AutowireCapableBeanFactory
         AutowireCapableBeanFactory beanFactory = applicationContext.getAutowireCapableBeanFactory();
 
-        ServiceLoader<UserFactory> serviceLoader = beanFactory.getBean("userFactoryServiceLoader", ServiceLoader.class);
+        ServiceLoader<UserFactory> serviceLoader =  beanFactory.getBean("userFactoryServiceLoader", ServiceLoader.class);
 
         displayServiceLoader(serviceLoader);
 
